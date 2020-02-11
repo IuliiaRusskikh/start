@@ -1,0 +1,55 @@
+@import 'vars';
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    background-color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $black;
+    -webkit-font-smoothing: antialiased;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+p{
+    &+&{
+    margin-top: 1rem;
+    }
+}
+
+@import 'header';
+@import 'burger';
+@import 'logo';
+@import 'container';
+@import 'nav';
+@import 'intro';
+@import 'btn';
+@import 'about';
+@import 'story';
+@import 'expertise';
+@import 'services';
+@import 'team';
+@import 'members';
+@import 'works';
+@import 'blog';
+@import 'reviews';
+@import 'slider';
+@import 'contact';
+@import 'form';
+@import 'footer';
+@import 'modal';

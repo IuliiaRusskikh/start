@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Tajam
+        |
+        |
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display:400,700,900|Roboto:100,300,400,900&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.css")  
+
+    body
+        <svg style="display: none;">
+            <symbol id="facebook" viewBox="0 -53 384 384">
+                <g>
+                    <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+                </g>
+            </symbol>
+        </svg>
+
+        // header
+        header.header#header
+            .container
+                .header__inner
+                    mixin logo
+                        .logo
+                            img.logo__icon(src="img/header/logo.png", alt="")
+                            .logo__text tajam
+                    +logo
+                    nav.nav#nav
+                        a.nav__link(href="#", data-scroll="#intro") home
+                        a.nav__link(href="#", data-scroll="#about") about
+                        a.nav__link(href="#", data-scroll="#expertise") expertise
+                        a.nav__link(href="#", data-scroll="#team") teams
+                        a.nav__link(href="#", data-scroll="#works") works
+                        a.nav__link(href="#", data-scroll="#blog") people say
+                        a.nav__link(href="#", data-scroll="#contact") contact
+                    button.burger#navToggle(type="button")
+                        .burger__item
+                            <svg class="burger__icon">
+                                <use xlink:href="#facebook">
+                                    
+                                </use>
+                            </svg>
+
+        // /header
+
+        // intro
+        section.intro#intro(style="background: url(img/bg.jpg) center no-repeat; background-size: cover;")
+            .container
+                .intro__inner
+                    h1.intro__title We Are Awesome Creative Agency
+                    .intro__text
+                        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                    button.btn.btn--dark(type="button") learn more
+        // /intro
+        
+        // about
+        section.about#about
+            .container
+                .about__inner
+                    .about__pic
+                        img.about__img(src="img/about/about.jpg", alt="")
+                    .about__content
+                        h2.about__title
+                            p OUR STORY
+                        .about__text 
+                            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibth id elit. Duis sed odio sit amet nibh vulputate cursus
+                            
+                            p#more Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        
+                        button.about__button(type="button", data-more="#more") see more...
+                        
+                        button.btn(type="button") learn more
+        // /about
+
+        // story
+        .story(style="background: url(img/about/storybg.jpg) center no-repeat; background-size: cover;")
+            .container
+                .story__content
+                    div
+                        a.story__link(href="#", data-modal="#modal__video")
+                            img(src="img/about/PlayIcon.png", alt="")
+                    
+                    div
+                        a.story__text(href="#", data-modal="#modal__video") watch our story
+        // /story
+
+        // expertise
+        section.expertise#expertise
+            .container
+                .expertise__inner
+                    .experience__description
+                        h2.expertise__title expertise
+                        h3.expertise__subtitle Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                    .expertise__services
+                        .services
+                            .services__item
+                                img.services__icon(src="img/expertise/1.png", alt="")
+                                .services__title
+                                    p WEB DESIGN &amp; DEVELOPMENT
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+                            .services__item
+                                img.services__icon(src="img/expertise/2.png", alt="")
+                                .services__title
+                                    p BRANDING IDENTITY
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+                            .services__item
+                                img.services__icon(src="img/expertise/3.png", alt="")
+                                .services__title
+                                    p MOBILE APP
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+                            .services__item
+                                img.services__icon(src="img/expertise/4.png", alt="")
+                                .services__title
+                                    p SEARCH ENGINE OPTIMIZATION
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+                            .services__item
+                                img.services__icon(src="img/expertise/5.png", alt="")
+                                .services__title
+                                    p GAME DEVELOPMENT
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+
+                            .services__item
+                                img.services__icon(src="img/expertise/6.png", alt="")
+                                .services__title
+                                    p MADE WITH LOVE
+                                .services__text
+                                    p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        // /expertise
+
+        // team
+        section.team#team(style="background: url(img/team/teambg.jpg) center no-repeat; background-size:cover;")
+            .container
+                .team__inner
+                    h2.team__title MEET OUR AMAZING TEAM
+                    h3.team__subtitle Lorem ipsum dolor sit amet proin gravida nibh vel velit
+                    
+                    mixin member(image, name, pos)
+                        .members__item
+                            img.members__photo(src=''+image, alt="")
+                            div.members__info
+                                div.members__name
+                                    p= name
+                                div.members__pos
+                                    p= pos
+                    .team__members
+                        +member("https://placehold.it/220x230/fff", 'SEMF UCUK', 'CEO & FOUNDER')
+                        +member("https://placehold.it/220x230/fff", 'DIK ADALIN', 'ENGINEERING')
+                        +member("https://placehold.it/220x230/fff", 'JENG KOL', 'DESIGNER')
+                        +member("https://placehold.it/220x230/fff", 'PET ROMAK', 'MARKETING')
+
+                    .team__text 
+                        p Become part of our dream team, let’s join us !
+                    button.btn.btn--dark.btn--wide(type="button") we are hiring
+        // /team
+
+        // works
+        section.works#works
+            .container
+                .works__header
+                    h2.works__title OUR WORKS
+                    a.works__seeall(href="#")
+                        div 
+                            p See All Project in dribbble
+                        img.works__link(src="img/works/right.png", alt="")
+            .works__inner
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/b6b6b6", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/acacac", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/a1a1a1", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/8a8a8a", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/b6b6b6", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/a4a4a4", alt="")
+                    
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/a4a4a4", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/b6b6b6", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/8a8a8a", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/a1a1a1", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/acacac", alt="")
+                .works__item
+                    img.works__img(src="https://placehold.it/267x200/b6b6b6", alt="")
+            
+            .works__button
+                button.btn.btn--wide(type="button") load more
+        // /works           
+
+        // blog
+        .blog#blog(style="background: url(img/blog/blogbg.jpg) center no-repeat; background-size: cover;")
+            .container
+                img.blog__title(src="img/blog/symbol.png", alt="")
+                .reviews#slider
+                    div
+                        .reviews__item
+                            .reviews__text
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ad?
+                            .reviews__name
+                                p 1 JANE GALADRIEL
+                            .reviews__pos
+                                p 1 CEO TENGKUREP
+                    div
+                        .reviews__item
+                            .reviews__text
+                                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex incidunt, veritatis velit reiciendis error explicabo non maiores porro ducimus excepturi.
+                            .reviews__name
+                                p 2 JANE GALADRIEL
+                            .reviews__pos
+                                p 2 CEO TENGKUREP
+
+                    div
+                        .reviews__item
+                            .reviews__text
+                                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            .reviews__name
+                                p JANE GALADRIEL
+                            .reviews__pos
+                                p CEO TENGKUREP
+
+                    div
+                        .reviews__item
+                            .reviews__text
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse, eveniet, minus iusto quia praesentium tempore rem sunt quod eos vel ipsum, possimus cum minima. Maiores fugit necessitatibus minus dolores.
+                            .reviews__name
+                                p 4 JANE GALADRIEL
+                            .reviews__pos
+                                p 4 CEO TENGKUREP
+
+                    div
+                        .reviews__item
+                            .reviews__text
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vero blanditiis consequatur molestias repudiandae aliquid laboriosam tempora ab earum necessitatibus, numquam eligendi quas ipsa eum ea id libero commodi beatae, error similique ullam soluta. Saepe facilis sapiente eius repellat incidunt!
+                            .reviews__name
+                                p 5 JANE GALADRIEL
+                            .reviews__pos
+                                p 5 CEO TENGKUREP
+        // /blog
+
+        //contact
+        section.contact#contact
+            .container
+                .contact__inner
+                    h2.contact__title GIVE US A GOOD NEWS
+                    form.form(action="/")
+                        input.form__input(type="text", placeholder="Name")
+                        input.form__input(type="text", placeholder="Email")
+                        input.form__input(type="text", placeholder="Subject")
+                        textarea.form__textarea(name="", type="text", placeholder="Your Massage")
+                    button.btn(type="submit") SUBMIT 
+        // /contact
+
+        // footer
+        footer.footer(style="background: url(img/footer/footerbg.jpg) center no-repeat; background-size: cover;")
+            .container
+                .footer__inner
+                    .footer__col.footer__col
+                        +logo
+                        .footer__text
+                            p lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+                    
+
+                    .footer__col
+                        h4.footer__title OUR STUDIO
+                        ul.footer__list
+                            a(href="https://goo.gl/maps/43JZquenLQzc2zP6A", target="_blank")
+                                li.list__item
+                                    img(src="img/footer/map.png", alt="")
+                                    p Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+                            a(href="#")
+                                li.list__item
+                                    img(src="img/footer/call.png", alt="")
+                                    p (+62) 21-2224 3333
+
+                    .footer__col.footer__col--last
+                        h4.footer__title STAY IN TOUCH
+                        .footer__form
+                            .footer__form-group
+                                input.footer__input(type="text", placeholder="Subscribe our newsletter")
+                                button.footer__btn(type="submit")
+                                    img(src="img/footer/send.png", alt="")
+
+                        .footer__social
+                            a.social__item.social__item--facebook(href="#", target="_blank")
+                            a.social__item.social__item--twitter(href="#", target="_blank")
+                            a.social__item.social__item--dribbble(href="#", target="_blank")
+                            a.social__item.social__item--instagram(href="#", target="_blank")
+                            a.social__item.social__item--gplus(href="#", target="_blank")
+                            a.social__item.social__item--youtube(href="#", target="_blank")
+
+                    .footer__info
+                        .footer__links
+                            div
+                                a.footer__link(href="#") HELP
+                            div
+                                a.footer__link(href="#") TERMS &amp; CONDITION
+                            div
+                                a.footer__link(href="#") PRIVACY
+                        .copyright
+                            p Copyright © 2015 - Tajem Creative
+        // /footer
+            
+
+        // modal
+        .modal#modal__video
+            .modal__dialog
+                button.modal__close(data-close)
+                    img.modal__close-icon(src="img/close.svg", alt="")
+                <iframe class="modal__video" width="560" height="315" src="https://www.youtube.com/embed/KvUgaHTNit4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        // /modal        
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>

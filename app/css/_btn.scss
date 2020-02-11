@@ -1,0 +1,43 @@
+.btn{
+    padding: 0;
+    height: 2.6em;
+    width: 8.2em;
+    cursor: pointer;
+    border: 1px solid $blue;
+    border-radius: 3px;
+    background: transparent;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.06rem;
+    color: $blue;
+
+    transition: background .2s linear, color .2s linear;
+
+    @media #{$mobile}{
+        font-size: .93rem;
+    }
+
+    &--wide{
+        width: 9.5em;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+
+    &--dark{
+        &:hover{
+            background-color: $blue;
+            color: #312854;
+        }
+    }
+
+   
+}

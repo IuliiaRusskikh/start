@@ -1,0 +1,47 @@
+.reviews{
+    padding-top: 2rem;
+}
+
+.reviews__item{
+    margin: 0 auto;
+    max-width: 52rem;
+    text-align: center;
+}
+
+.reviews__text{
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.07rem;
+    color: rgba($white, .85);
+    line-height: 1.625;
+
+    @media #{$mobile}{
+        font-size: 0.93rem;
+    }
+
+    @media #{$mobile-sm}{
+        font-size: 0.8rem;
+    }
+}
+
+.reviews__name{
+    margin-bottom: 0.5rem;
+    font-size: 0.93rem;
+    font-weight: 900;
+    color: $white;
+
+    @media #{$mobile}{
+        font-size: 0.9rem;
+    }
+}
+
+.reviews__pos{
+    font-weight: 300;
+    font-size: 0.86rem;
+    color: rgba($white, .70);
+
+    @media #{$mobile}{
+        font-size: 0.8rem;
+    }
+}

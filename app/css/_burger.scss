@@ -1,0 +1,27 @@
+.burger{
+    display: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+
+    &:focus{
+        outline: none;
+    }
+
+    @media #{$mobile}{
+        display: flex;
+    }
+}
+
+.burger__item{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.burger__icon{
+    display: block;
+    fill: $white;
+}

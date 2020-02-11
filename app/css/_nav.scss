@@ -1,0 +1,45 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media #{$mobile}{
+        background-color: #372c5b;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        display: none;
+
+        &.showNav{
+            display: flex;
+        }
+    }
+}
+
+.nav__link{
+    margin-left: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .86rem;
+    color: $white;
+
+    transition: color .1s linear;
+
+    &:hover{
+        color: $blue;
+    }
+
+    @media #{$mobile}{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        text-align: right;
+    }
+}
+.active{
+    color: $blue;
+}

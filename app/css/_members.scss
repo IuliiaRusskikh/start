@@ -1,0 +1,53 @@
+.team__members{
+    margin: 3.2rem 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$mobile}{
+        margin: 2rem 0 0;
+    }
+}
+
+.members__item{
+    width: 25%;
+    padding: 0 10px;
+
+    @media #{$mobile}{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    @media #{$mobile-sm}{
+        width: 100%;
+    }
+}
+
+.members__photo{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.members__info{
+    padding: 1.2rem 0;
+    width: 100%;
+
+    border: 1px solid rgba(#e7e7e7, .5);
+    border-top: 0;
+}
+
+.members__name{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.93rem;
+    color: $white;
+}
+
+.members__pos{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: .86rem;
+    color: rgba($white, .7);
+}
